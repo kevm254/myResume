@@ -1,0 +1,15 @@
+<section id="work_experience_section" *ngIf="workExperiences">
+  <div class="work_experience_container" *ngFor="let workExperience of workExperiences" style="color: white; display: flex;">
+
+    <work-exp-panel
+      [workRole]="workExperience.workRole"
+      [companyName]="workExperience.companyName"
+      [location]="workExperience.location"
+      [fromDate]="workExperience.fromDate"
+      [toDate]="workExperience.toDate"
+      [bodyText]="workExperience.bodyText">
+    </work-exp-panel>
+
+
+  </div>
+</section>
